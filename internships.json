@@ -1,0 +1,59 @@
+
+{
+  "internships": [
+    {
+      "id": 1,
+      "title": "Frontend Developer Intern",
+      "domain": "Web Development",
+      "mode": "Remote",
+      "location": "Remote",
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "openings": 3
+    },
+    {
+      "id": 2,
+      "title": "Python Developer Intern",
+      "domain": "Python Development",
+      "mode": "Hybrid",
+      "location": "Kochi",
+      "skills": ["Python", "Flask", "SQL"],
+      "openings": 2
+    },
+    {
+      "id": 3,
+      "title": "Data Analyst Intern",
+      "domain": "Data Analytics",
+      "mode": "Remote",
+      "location": "Remote",
+      "skills": ["Python", "Excel", "SQL"],
+      "openings": 4
+    },
+    {
+      "id": 4,
+      "title": "Full Stack Developer Intern",
+      "domain": "Web Development",
+      "mode": "On-site",
+      "location": "Thiruvananthapuram",
+      "skills": ["HTML", "CSS", "JavaScript", "Node.js"],
+      "openings": 2
+    },
+    {
+      "id": 5,
+      "title": "UI/UX Design Intern",
+      "domain": "UI/UX Design",
+      "mode": "Remote",
+      "location": "Remote",
+      "skills": ["Figma", "Wireframing", "Prototyping"],
+      "openings": 2
+    },
+    {
+      "id": 6,
+      "title": "Cybersecurity Intern",
+      "domain": "Cybersecurity",
+      "mode": "Hybrid",
+      "location": "Kochi",
+      "skills": ["Networking", "Linux", "Security Basics"],
+      "openings": 3
+    }
+  ]
+}

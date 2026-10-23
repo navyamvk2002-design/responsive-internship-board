@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #263248;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.site-header {
+    background: linear-gradient(135deg, #173b70, #2864ad);
+    color: white;
+    padding: 35px 0;
+}
+
+.site-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.site-header p {
+    margin-bottom: 25px;
+}
+
+#filter-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 15px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    font: inherit;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+}
+
+button {
+    background-color: #e0ebff;
+    color: #173b70;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c6dcff;
+}
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+main {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+main h2 {
+    margin-bottom: 18px;
+    color: #173b70;
+}
+
+#status {
+    margin-bottom: 15px;
+}
+
+.internship-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #dce4ef;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    color: #173b70;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e7efff;
+    color: #173b70;
+    border-radius: 20px;
+    padding: 4px 9px;
+    margin: 3px;
+    font-size: 0.85rem;
+}
+
+.card button {
+    margin-top: 12px;
+}
+
+.footer {
+    background-color: #e4ebf5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    #filter-form {
+        grid-template-columns: 1fr;
+    }
+
+    .internship-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .internship-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 16px;
+    }
+}
