@@ -28,7 +28,8 @@ A responsive internship listing website built using HTML, CSS, JavaScript and JS
 The sample internship records are fictional and are provided for demonstration.
 
 ## Screenshots
-Add screenshots of the desktop and mobile layouts here.
+<img width="1920" height="1080" alt="Screenshot 2026-10-23 202128" src="https://github.com/user-attachments/assets/c45596f0-632b-4869-a435-d81bc10fad75" />
+
 
 ## Live Demo
 [View Live Website](https://navyamvk2002-design.github.io/responsive-internship-board/)
