@@ -31,4 +31,4 @@ The sample internship records are fictional and are provided for demonstration.
 Add screenshots of the desktop and mobile layouts here.
 
 ## Live Demo
-Add the deployed website URL here after deployment.
+[View Live Website](https://navyamvk2002-design.github.io/responsive-internship-board/)
