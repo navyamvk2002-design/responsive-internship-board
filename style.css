@@ -1,10 +1,12 @@
 
+/* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f6fb;
@@ -15,9 +17,10 @@ body {
 .container {
     width: 90%;
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 }
 
+/* Header */
 .site-header {
     background: linear-gradient(135deg, #173b70, #2864ad);
     color: white;
@@ -33,9 +36,10 @@ body {
     margin-bottom: 25px;
 }
 
+/* Search and filters */
 #filter-form {
     display: grid;
-    grid-template-columns: 2fr 1fr auto;
+    grid-template-columns: 2fr 1fr 1fr auto;
     gap: 15px;
     align-items: end;
 }
@@ -44,6 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    min-width: 0;
 }
 
 label {
@@ -61,6 +66,12 @@ button {
     border-radius: 7px;
 }
 
+input,
+select {
+    background-color: white;
+    color: #263248;
+}
+
 button {
     background-color: #e0ebff;
     color: #173b70;
@@ -72,6 +83,12 @@ button:hover {
     background-color: #c6dcff;
 }
 
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Keyboard accessibility */
 input:focus-visible,
 select:focus-visible,
 button:focus-visible {
@@ -79,6 +96,7 @@ button:focus-visible {
     outline-offset: 2px;
 }
 
+/* Main content */
 main {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -93,6 +111,12 @@ main h2 {
     margin-bottom: 15px;
 }
 
+#retry-button {
+    margin-bottom: 20px;
+    max-width: 220px;
+}
+
+/* Internship cards */
 .internship-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -100,6 +124,7 @@ main h2 {
 }
 
 .card {
+    min-width: 0;
     background-color: white;
     border: 1px solid #dce4ef;
     border-radius: 12px;
@@ -110,6 +135,7 @@ main h2 {
 .card h3 {
     color: #173b70;
     margin-bottom: 12px;
+    overflow-wrap: anywhere;
 }
 
 .card p {
@@ -131,6 +157,7 @@ main h2 {
     margin-top: 12px;
 }
 
+/* Footer */
 .footer {
     background-color: #e4ebf5;
     text-align: center;
@@ -151,6 +178,14 @@ main h2 {
 
 /* Mobile */
 @media (max-width: 480px) {
+    .container {
+        width: 92%;
+    }
+
+    .site-header {
+        padding: 25px 0;
+    }
+
     .site-header h1 {
         font-size: 1.7rem;
     }
